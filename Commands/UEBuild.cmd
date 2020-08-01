@@ -23,7 +23,7 @@ PAUSE
 cd %enginePath%
 
 REM You also have to change the name of the UE project to your specific project.
-RunUAT BuildCookRun -project="%basePath%\Project\BuildAutomationTest.uproject" -noP4 -platform=Win64 -clientconfig=Development -serverconfig=Development -cook -allmaps -build -stage -pak -archive -archivedirectory="%basePath%\Build"
+RunUAT BuildCookRun -project="%basePath%\Project\BuildAutomationTest\BuildAutomationTest.uproject" -noP4 -platform=Win64 -clientconfig=Development -serverconfig=Development -cook -allmaps -build -stage -pak -archive -archivedirectory="%basePath%\Build"
 
 echo Deleting Project folder which is no longer needed.
 rd /s /q "%basePath%\Project"
